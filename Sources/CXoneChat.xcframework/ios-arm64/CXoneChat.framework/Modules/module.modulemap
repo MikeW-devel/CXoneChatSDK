@@ -1,0 +1,11 @@
+framework module CXoneChat {
+  umbrella header "CXoneChat.h"
+
+  export *
+  module * { export * }
+}
+
+module CXoneChat.Swift {
+    header "CXoneChat-Swift.h"
+    requires objc
+}

@@ -21,6 +21,9 @@ let package = Package(
         .target(
             name: "CXoneChatSDK",
             dependencies: []),
+        .binaryTarget(
+                    name: "CXoneChatSDKBinary",
+                    path: "./Sources/CXoneChat.xcframework"),
         .testTarget(
             name: "CXoneChatSDKTests",
             dependencies: ["CXoneChatSDK"]),
